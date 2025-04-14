@@ -48,6 +48,7 @@ git pull
 # cp -v /home/erik/ARCO/ARCOLINUX-REPO/arcolinux_repo_3party/x86_64/kernel-install-mkinitcpio*pkg.tar.zst $workdir/usr/local/bin
 # echo
 
+repopath=$HOME"/Data/linux-stuff/genesis-repo/x86_64/"
 
 echo "getting arcolinux-refind-theme-arco-specs"
 echo
@@ -57,7 +58,7 @@ rm -v $workdir/usr/local/bin/arcolinux-refind-theme-arco*pkg.tar.zst
 echo
 echo "Copied"
 echo
-cp -v /home/erik/ARCO/ARCOLINUX-REPO/arcolinux_repo/x86_64/arcolinux-refind-theme-arco-specs*pkg.tar.zst $workdir/usr/local/bin
+cp -v ${repopath}arcolinux-refind-theme-arco-specs*pkg.tar.zst $workdir/usr/local/bin
 echo
 
 
@@ -70,7 +71,7 @@ rm -v $workdir/usr/local/bin/arcolinux-bootloader-refind*pkg.tar.zst
 echo
 echo "Copied"
 echo
-cp -v /home/erik/ARCO/ARCOLINUX-REPO/arcolinux_repo/x86_64/arcolinux-bootloader-refind*pkg.tar.zst $workdir/usr/local/bin
+cp -v ${repopath}arcolinux-bootloader-refind*pkg.tar.zst $workdir/usr/local/bin
 echo
 
 
@@ -83,7 +84,7 @@ rm -v $workdir/usr/local/bin/arcolinux-bootloader-systemd-boot*pkg.tar.zst
 echo
 echo "Copied"
 echo
-cp -v /home/erik/ARCO/ARCOLINUX-REPO/arcolinux_repo/x86_64/arcolinux-bootloader-systemd-boot*pkg.tar.zst $workdir/usr/local/bin
+cp -v ${repopath}arcolinux-bootloader-systemd-boot*pkg.tar.zst $workdir/usr/local/bin
 echo
 
 
@@ -96,7 +97,7 @@ rm -v $workdir/usr/local/bin/pacman-hook-kernel-install*pkg.tar.zst
 echo
 echo "Copied"
 echo
-cp -v /home/erik/ARCO/ARCOLINUX-REPO/arcolinux_repo_3party/x86_64/pacman-hook-kernel-install*pkg.tar.zst $workdir/usr/local/bin
+cp -v ${repopath}pacman-hook-kernel-install*pkg.tar.zst $workdir/usr/local/bin
 echo
 
 # Below command will backup everything inside the project folder
